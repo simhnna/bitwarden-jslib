@@ -105,4 +105,8 @@ export class CipherView implements View {
     get isDeleted(): boolean {
         return this.deletedDate != null;
     }
+
+    get permalink(): string {
+        return `/#/vault?itemId=${this.id}`
+    }
 }
